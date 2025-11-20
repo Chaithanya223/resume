@@ -1,0 +1,159 @@
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  background: #f3f4f6;
+  color: #111827;
+  scroll-behavior: smooth;
+  transition: background 0.5s, color 0.5s;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+  padding: 15px 40px;
+  color: white;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  font-weight: 600;
+  font-size: 1.2em;
+}
+
+nav ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+nav a:hover, nav .active {
+  text-decoration: underline;
+}
+
+#themeToggle {
+  background: white;
+  border: none;
+  border-radius: 8px;
+  padding: 6px 10px;
+  cursor: pointer;
+}
+
+.section {
+  padding: 100px 40px 60px;
+  text-align: center;
+}
+
+.hero {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #3b82f6, #8b5cf6, #0ea5e9);
+  color: white;
+  flex-direction: column;
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-size: 3em;
+  margin: 0;
+}
+
+.subtitle {
+  font-size: 1.2em;
+  margin-bottom: 15px;
+}
+
+.contact p {
+  margin: 5px 0;
+}
+
+.btn {
+  background: white;
+  color: #3b82f6;
+  border: none;
+  border-radius: 25px;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: #e0e7ff;
+}
+
+/* Skills Section */
+.skills {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.skills span {
+  background: #3b82f6;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-weight: 500;
+  transition: transform 0.3s;
+}
+
+.skills span:hover {
+  transform: scale(1.1);
+}
+
+/* Projects */
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  padding: 20px;
+  width: 280px;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* Dark Mode */
+body.dark {
+  background: #1e293b;
+  color: #f9fafb;
+}
+body.dark header {
+  background: linear-gradient(90deg, #0ea5e9, #6366f1);
+}
+body.dark .card {
+  background: #334155;
+}
+body.dark .skills span {
+  background: #6366f1;
+}
+
+footer {
+  background: #111827;
+  color: white;
+  padding: 15px;
+  text-align: center;
+}
